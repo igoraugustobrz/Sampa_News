@@ -1,0 +1,88 @@
+/*Formatação do cabeçalho*/
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Verdana, Sans-serif;
+}
+/*Fim da formatação*/
+	
+/*Tag header*/
+.menu-principal {
+	width: 100%;
+	background-color: #000000;
+	height: 100px;
+}
+
+main {
+	margin: 0 auto;
+	width:980px;
+	position: relative;
+	text-align: center;
+}
+
+.logo {
+	padding: 16px;
+}
+
+.buscar input {
+	position: fixed;
+	top: 0;
+	right: 20px;
+}
+/*Fim da tag header*/
+
+/*Menu Dropdown*/
+:root{
+	--cor-fundo: #000000;
+	--cor-hover: red;
+	--cor-primaria: #FFDB58;
+}
+
+.dp-menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.dp-menu ul {
+	background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+		display: inline; 
+		position: relative;
+}
+
+.dp-menu ul li a {
+		color: var(--cor-primaria); 
+		display: inline-block;
+		text-decoration: none;
+		padding: 10px;
+		transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+		background-color: var(--cor-hover);
+		
+}
+/*Fim do Menu Dropdown*/
+
+/*Sub Menu*/
+.dp-menu ul ul {
+	display: none;
+	left: 0;
+	position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+	display: block;
+}
+
+.dp-menu ul ul {
+	width: 150px;
+}
+
+.dp-menu ul ul li a {
+	display: block;
+	
+}
+/*Fim do Sub Menu*/
