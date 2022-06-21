@@ -40,9 +40,9 @@ main {
 
 /*Menu Dropdown*/
 :root{
-	--cor-fundo: #000000;
+	--cor-fundo: #FFFFFF;
 	--cor-hover: #CF0E0E;
-	--cor-primaria: #FFDB58;
+	--cor-primaria: #000000;
 }
 
 .dp-menu ul {
@@ -61,7 +61,7 @@ main {
 
 .dp-menu ul li a {
 		color: var(--cor-primaria); 
-		display: inline-block;
+		display:inline-block;
 		text-decoration: none;
 		padding: 10px;
 		transition: background .3s;
@@ -71,7 +71,6 @@ main {
 		background-color: var(--cor-hover);
 		
 }
-/*Fim do Menu Dropdown*/
 
 /*Sub Menu*/
 .dp-menu ul ul {
@@ -92,4 +91,14 @@ main {
 	display: block;
 	
 }
-/*Fim do Sub Menu*/
+
+/*Formatação da Imagem do menu*/
+.menu-image{
+	display: flex;
+	position: fixed;
+	text-align: center;
+	height: 7vh;
+	top: 2.5vh;
+	bottom: 20vh;
+	left: 5vh;
+}
