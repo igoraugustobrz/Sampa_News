@@ -1,40 +1,47 @@
+/*Formatação geral do site*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
 /*Formatação do cabeçalho*/
 body {
 	height: 100%;
 	width: 100%;
 	font-family: Arial, Verdana, Sans-serif;
+	overflow-x: hidden;
 }
-/*Fim da formatação*/
 	
-/*Tag header*/
+/*Formatação da tag header*/
 .menu-principal {
-	width: 100%;
-	background-color: #000000;
-	height: 100px;
-}
+	background-color: #CF0E0E;
+	height: 80px;
+	width: 250vh;
+	position: fixed;
+}	
 
+/*Formatação da tag main*/
 main {
 	margin: 0 auto;
-	width:980px;
+	width: 980px;
 	position: relative;
-	text-align: center;
 }
 
-.logo {
-	padding: 16px;
+/*Formatação da logo*/
+.logo-image img {
+	display: flex;
+	position: relative;
+	text-align:center;	
+	left: 260px;
+	width: 25vh;
+	top: 10px;
+	bottom: 10px;
 }
-
-.buscar input {
-	position: fixed;
-	top: 0;
-	right: 20px;
-}
-/*Fim da tag header*/
 
 /*Menu Dropdown*/
 :root{
 	--cor-fundo: #000000;
-	--cor-hover: red;
+	--cor-hover: #CF0E0E;
 	--cor-primaria: #FFDB58;
 }
 
