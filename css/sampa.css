@@ -48,28 +48,25 @@ main {
 .dp-menu ul {
 	list-style-type: none;
 	padding: 0;
-}
-
-.dp-menu ul {
+	width: 25vh;
 	background-color: var(--cor-fundo);
 }
 
 .dp-menu ul li {
-		display: inline; 
-		position: relative;
+	display: inline; 
+	position: relative;
 }
 
 .dp-menu ul li a {
-		color: var(--cor-primaria); 
-		display:inline-block;
-		text-decoration: none;
-		padding: 10px;
-		transition: background .3s;
+	color: var(--cor-primaria); 
+	display: flex;
+	text-decoration: none;
+	padding: 10px;
+	transition: background .3s;
 }
 
 .dp-menu ul li a:hover {
-		background-color: var(--cor-hover);
-		
+	background-color: var(--cor-hover);
 }
 
 /*Sub Menu*/
@@ -77,6 +74,7 @@ main {
 	display: none;
 	left: 0;
 	position: absolute;
+	width: 20vh;
 }
 
 .dp-menu ul li:hover ul {
@@ -101,4 +99,5 @@ main {
 	top: 2.5vh;
 	bottom: 20vh;
 	left: 5vh;
+	cursor: pointer;
 }
