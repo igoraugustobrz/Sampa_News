@@ -1,7 +1,9 @@
 /*Formatação geral do site*/
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
 }
 
 /*Formatação do cabeçalho*/
@@ -9,95 +11,72 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: Arial, Verdana, Sans-serif;
-	overflow-x: hidden;
 }
-	
+
+body,html{
+	height: 100%;
+}
+
 /*Formatação da tag header*/
-.menu-principal {
+.container {
 	background-color: #CF0E0E;
 	height: 80px;
 	width: 250vh;
 	position: fixed;
 }	
 
-/*Formatação da tag main*/
-main {
-	margin: 0 auto;
-	width: 980px;
-	position: relative;
-}
-
-/*Formatação da logo*/
-.logo-image img {
+/*Formatação da imagem da logo Sampa News*/
+#logo-image img {
 	display: flex;
 	position: relative;
 	text-align:center;	
-	left: 260px;
+	left: 90vh;
 	width: 25vh;
 	top: 10px;
 	bottom: 10px;
 }
 
-/*Menu Dropdown*/
-:root{
-	--cor-fundo: #FFFFFF;
-	--cor-hover: #CF0E0E;
-	--cor-primaria: #000000;
-}
-
-.dp-menu ul {
-	list-style-type: none;
-	padding: 0;
-	width: 25vh;
-	background-color: var(--cor-fundo);
-}
-
-.dp-menu ul li {
-	display: inline; 
-	position: relative;
-}
-
-.dp-menu ul li a {
-	color: var(--cor-primaria); 
-	display: flex;
-	text-decoration: none;
-	padding: 10px;
-	transition: background .3s;
-}
-
-.dp-menu ul li a:hover {
-	background-color: var(--cor-hover);
-}
-
-/*Sub Menu*/
-.dp-menu ul ul {
-	display: none;
-	left: 0;
-	position: absolute;
-	width: 20vh;
-}
-
-.dp-menu ul li:hover ul {
-	display: block;
-}
-
-.dp-menu ul ul {
-	width: 150px;
-}
-
-.dp-menu ul ul li a {
-	display: block;
-	
-}
-
-/*Formatação da Imagem do menu*/
-.menu-image{
-	display: flex;
-	position: fixed;
-	text-align: center;
-	height: 7vh;
-	top: 2.5vh;
-	bottom: 20vh;
+/*Formatação da imagem do menu hambúrguer*/
+#menu-button{
+	height: 8vh;
+	width: 8vh;
+	bottom: 9.5vh;
+	top: -6.9vh;
 	left: 5vh;
+	position: relative;
 	cursor: pointer;
+}
+
+/*A partir daqui começa a Formatação do Menu*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*Formatação da Lista Não Ordenada (ul) */
+ul{
+	list-style-type: none;
+}
+
+/*Formatação do Input checkbox*/
+input[type="checkbox"]{
+	display: none;
+}
+
+/*Formatação da tag nav*/
+nav{
+	background-color: pink;
+	width: 50vh;
+	height: 100vh;
+}
+
+/*Formatação da tag a (aqui foi definido que o display block irá ocupar toda a área da tag a)*/
+a{
+	display: block;
+	padding: 20px 5px;
+
+}
+
+a:hover{
+	background: ;
 }

@@ -12,37 +12,34 @@
 		<script type="text/javascript" src="js/sampa.js"></script>
 	</head>
 	<body>
-		<header class="menu-principal">
+		<header class="container">
 			<main>
-				<div class="logo-image">
-					<img src="img/logo-letras.png" alt="logo">
+				<!-- Div com a imagem da logo do site-->
+				<div id="logo-image">
+					<img src="img/logo-letras.png" alt="Logo" title="Sampa News">
 				</div>
-				<nav class="dp-menu">
-					<img class="menu-image" src="img/menu-branco.png" alt="Menu">	
+
+				<!-- Input e Label responsáveis por fazer o menu funcionar -->
+				<input type="checkbox" id="menu">
+				<label for="menu">
+					<img src="img/menu-hamburguer.png" id="menu-button" alt="Menu Hambúrguer">
+				</label>
+
+				<!-- Tag nav com o conteúdo em texto que está dentro do menu -->
+				<nav>
 					<ul>
-						<li><a href="#">Página Inicial</a></li>
-						<li><a href="#">Menu de Notícias</a>
-					<ul>
-						<li><a href="#">Centro</a></li>
-						<li><a href="#">Zona Norte</a></li>
-						<li><a href="#">Zona Sul</a></li>
-						<li><a href="#">Zona Leste</a></li>
-						<li><a href="#">Zona Oeste</a></li>
+						<li><a href="#" target="_blank">Sampa News</a></li>
+						<li><a href="#" target="_blank">Notícias</a></li>
 					</ul>
-						</li>
-						<li><a href="#">Contato</a></li>
-						<li><a href="#">Sampa News</a></li>
-					</ul>	
-				</nav>		
+				</nav>
 			</main>
 		</header>
-
-
-
-			<!--<nav class="dp-menu">
-				<--	-->
-
-		<footer>
-		</footer>
+		<!--<ul>
+			<li><a href="#" target="_blank">Centro</a></li>
+			<li><a href="#" target="_blank">Zona Norte</a></li>
+			<li><a href="#" target="_blank">Zona Sul</a></li>
+			<li><a href="#" target="_blank">Zona Leste</a></li>
+			<li><a href="#" target="_blank">Zona Oeste</a></li>
+		</ul>-->
 	</body>
 </html>
