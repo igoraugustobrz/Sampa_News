@@ -1,5 +1,5 @@
 /*Formatação geral do site*/
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -13,10 +13,9 @@ body {
 	font-family: Arial, Verdana, Sans-serif;
 }
 
-body,html{
+html,body {
 	height: 100%;
 }
-
 /*Formatação da tag header*/
 .container {
 	background-color: #CF0E0E;
@@ -34,49 +33,75 @@ body,html{
 	width: 25vh;
 	top: 10px;
 	bottom: 10px;
+	z-index: 1;
 }
 
 /*Formatação da imagem do menu hambúrguer*/
-#menu-button{
+#menu-button {
 	height: 8vh;
 	width: 8vh;
-	bottom: 9.5vh;
-	top: -6.9vh;
 	left: 5vh;
+	bottom: 9vh;
 	position: relative;
 	cursor: pointer;
+
 }
 
 /*A partir daqui começa a Formatação do Menu*/
-a{
+a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 /*Formatação da Lista Não Ordenada (ul) */
-ul{
+ul {
 	list-style-type: none;
 }
 
 /*Formatação do Input checkbox*/
-input[type="checkbox"]{
+input[type="checkbox"] {
 	display: none;
 }
 
 /*Formatação da tag nav*/
-nav{
-	background-color: pink;
+nav {
 	width: 50vh;
-	height: 100vh;
+	height: 100%;
+	left: -50vh;
+	top: 2vh;
+	background-color: #CF0E0E; /*Exemplo de cor caso eu não deseje utilizar a cor do header: #E70000*/
+	border-radius: 15px;
+	position: absolute;
+	transition: all .5s;
 }
 
-/*Formatação da tag a (aqui foi definido que o display block irá ocupar toda a área da tag a)*/
-a{
+/*Formatação da tag a (aqui foi definido o padding e que o display block irá ocupar toda a área da tag a)*/
+a {
 	display: block;
 	padding: 20px 5px;
-
 }
 
-a:hover{
-	background: ;
+/*Formata a tag a quando o usuário passa o mouse sobre o link*/
+a:hover {
+	background: #8D8DAA;
+	border-radius: 4px;
+}
+
+/*Faz com que o Meu esteja dentro da */
+label {
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+/*Formata os itens da lista (os itens Sampa News, Notícias)*/
+ul {
+	width: 100%;
+	top: 70px;
+	position: absolute;
+}
+
+/*Faz com que o Menu apareça quando clicado*/
+input[type="checkbox"]:checked ~ nav {
+	transform: translateX(50vh);
 }
