@@ -5,18 +5,23 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Notícias de São Paulo</title>
-		<!-- CSS-->
-		<link rel="stylesheet" type="text/css" href="css/sampa.css">
 
+		<!-- Normalize CSS-->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- CSS-->
+		<link rel="stylesheet" href="css/sampa.css">
+
+		
 		<!-- Javascript -->
 		<script type="text/javascript" src="js/sampa.js"></script>
 	</head>
 	<body>
-		<header class="container"></header>
+		<header id="header-section"></header>
 
 			<!-- Div com a imagem da logo do site-->
 			<div id="logo-image">
-				<img src="img/logo-letras.png" alt="Logo" title="Sampa News">
+				<a href="#"><img src="img/logo-letras.svg" alt="Logo" title="Sampa News"></a>
 			</div>
 
 			<!-- Input e Label responsáveis por fazer o menu funcionar -->
@@ -25,20 +30,24 @@
 				<img src="img/menu-hamburguer.png" id="menu-button" alt="Menu Hambúrguer">
 			</label>
 
-			<!-- Tag nav com o conteúdo em texto que está dentro do menu -->
+			<!-- Tag nav com o conteúdo em texto que está dentro do Menu -->
 			<nav>
 				<ul>
-					<li><a href="#" target="_blank">Sampa News</a></i></li>
+					<li><a href="#" target="_blank">Sampa News</a></li>
 					<li><a href="#" target="_blank">Notícias</a></li>
 				</ul>
 			</nav>
-		
-		<!--<ul>
-			<li><a href="#" target="_blank">Centro</a></li>
-			<li><a href="#" target="_blank">Zona Norte</a></li>
-			<li><a href="#" target="_blank">Zona Sul</a></li>
-			<li><a href="#" target="_blank">Zona Leste</a></li>
-			<li><a href="#" target="_blank">Zona Oeste</a></li>
-		</ul>-->
+
+			<!-- Seção Principal do site -->
+			<main>
+				<div class="flex-container">
+					<div class="noticia-principal">
+						<p class="texto">Notícia Principal</p>
+					</div>
+					<div class="noticia-secundaria">
+						<p class="texto">Notícia secundária</p>
+				</div>
+				</div>
+			</main>
 	</body>
 </html>

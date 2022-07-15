@@ -1,4 +1,7 @@
-/*Formatação geral do site*/
+/* ===============
+   Estilos globais
+   =============== */
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -6,48 +9,66 @@
 	box-sizing: border-box;
 }
 
-/*Formatação do cabeçalho*/
+/* ===============
+   Formatação do Corpo
+   =============== */
+
 body {
 	height: 100%;
 	width: 100%;
 	font-family: Arial, Verdana, Sans-serif;
+	overflow-x: hidden;
 }
+
+/* ===============
+   Formatação Geral(body e html)
+   =============== */
 
 html,body {
 	height: 100%;
 }
-/*Formatação da tag header*/
-.container {
-	background-color: #CF0E0E;
+
+/* ===============
+	Cabeçalho do site
+   =============== */ 
+
+#header-section {
+	background-color: #cf0e0e;
 	height: 80px;
 	width: 250vh;
-	position: fixed;
+	position: absolute;
 }	
 
-/*Formatação da imagem da logo Sampa News*/
+/* ===============
+	Logo Sampa News
+   =============== */ 
+
 #logo-image img {
-	display: flex;
-	position: relative;
-	text-align:center;	
-	left: 90vh;
-	width: 25vh;
+	position: relative;	
+	left: 93.5vh;
 	top: 10px;
-	bottom: 10px;
 	z-index: 1;
+	cursor: pointer;
+	width: 25vh;
 }
 
-/*Formatação da imagem do menu hambúrguer*/
+/* ===============
+  	Menu Hambúrguer
+   =============== */  
 #menu-button {
 	height: 8vh;
 	width: 8vh;
 	left: 5vh;
-	bottom: 9vh;
+	bottom: 10vh;
 	position: relative;
 	cursor: pointer;
-
 }
 
-/*A partir daqui começa a Formatação do Menu*/
+/* ===============
+   A partir daqui começa
+   a formatação do 
+   funcionamento do menu
+   =============== */
 a {
 	text-decoration: none;
 	color: white;
@@ -69,20 +90,20 @@ nav {
 	height: 100%;
 	left: -50vh;
 	top: 2vh;
-	background-color: #CF0E0E; /*Exemplo de cor caso eu não deseje utilizar a cor do header: #E70000*/
+	background-color: #cf0e0e;
 	border-radius: 15px;
 	position: absolute;
 	transition: all .5s;
 }
 
 /*Formatação da tag a (aqui foi definido o padding e que o display block irá ocupar toda a área da tag a)*/
-a {
+li a {
 	display: block;
 	padding: 20px 5px;
 }
 
 /*Formata a tag a quando o usuário passa o mouse sobre o link*/
-a:hover {
+li a:hover {
 	background: #8D8DAA;
 	border-radius: 4px;
 }
@@ -104,4 +125,55 @@ ul {
 /*Faz com que o Menu apareça quando clicado*/
 input[type="checkbox"]:checked ~ nav {
 	transform: translateX(50vh);
+}
+/*AQUI TERMINA A FORMATAÇÃO DO FUNCIONAMENTO DO MENU*/
+
+/* ===============
+   Div principal
+   =============== */
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	height: 500px;
+	margin: 2.5em;
+	margin-top: 2.5em;
+}
+
+/* ===============
+   Notícia Primária
+   =============== */
+.noticia-principal{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-self: center;
+	border: 2px solid rebeccapurple;
+	height: 450px;
+	width: 600px;
+	margin: 0.5em;
+}
+
+.texto{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+/* ===============
+   Notícia Secundária
+   =============== */
+.noticia-secundaria{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	border: 2px solid fuchsia;
+	height: 450px;
+	width: 600px;
+	margin: 0.5em;
 }
