@@ -3,25 +3,26 @@
    =============== */
 
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
 
 /* ===============
    Formatação do Corpo
+   da página
    =============== */
 
 body {
 	height: 100%;
 	width: 100%;
-	font-family: Arial, Verdana, Sans-serif;
-	overflow-x: hidden;
 }
 
+
 /* ===============
-   Formatação Geral(body e html)
+   Formatação Geral
+   (body e html)
    =============== */
 
 html,body {
@@ -35,7 +36,7 @@ html,body {
 #header-section {
 	background-color: #cf0e0e;
 	height: 80px;
-	width: 250vh;
+	width: 100%;
 	position: absolute;
 }	
 
@@ -47,21 +48,23 @@ html,body {
 	position: relative;	
 	left: 93.5vh;
 	top: 10px;
-	z-index: 1;
 	cursor: pointer;
 	width: 25vh;
 }
 
 /* ===============
-  	Menu Hambúrguer
+  	Imagem Menu Hambúrguer
    =============== */  
+
 #menu-button {
+	background-image: url('../img/menu-hamburguer.png');
 	height: 8vh;
-	width: 8vh;
+	width: 10vh;
 	left: 5vh;
-	bottom: 10vh;
-	position: relative;
+	bottom: 37.5em;
+	position: absolute;
 	cursor: pointer;
+	z-index: 2; 
 }
 
 /* ===============
@@ -69,6 +72,7 @@ html,body {
    a formatação do 
    funcionamento do menu
    =============== */
+
 a {
 	text-decoration: none;
 	color: white;
@@ -94,6 +98,7 @@ nav {
 	border-radius: 15px;
 	position: absolute;
 	transition: all .5s;
+	z-index: 1;
 }
 
 /*Formatação da tag a (aqui foi definido o padding e que o display block irá ocupar toda a área da tag a)*/
@@ -129,14 +134,13 @@ input[type="checkbox"]:checked ~ nav {
 /*AQUI TERMINA A FORMATAÇÃO DO FUNCIONAMENTO DO MENU*/
 
 /* ===============
-   Div principal
+   Flex-Container com a formatação geral
    =============== */
-.flex-container{
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid black;
 	height: 500px;
 	margin: 2.5em;
 	margin-top: 2.5em;
@@ -145,35 +149,76 @@ input[type="checkbox"]:checked ~ nav {
 /* ===============
    Notícia Primária
    =============== */
-.noticia-principal{
+
+.noticia-primaria {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	align-self: center;
-	border: 2px solid rebeccapurple;
+	align-items: center;
 	height: 450px;
 	width: 600px;
 	margin: 0.5em;
-}
-
-.texto{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+	background-image: url('../img/ponte-estaiada.jpg');
+	filter: saturate(110%);
+	transition: all 0.2s ease-out;
+	border-radius: 12px;
+	cursor: pointer;
+	z-index: 0;
 }
 
 /* ===============
    Notícia Secundária
    =============== */
-.noticia-secundaria{
+
+.noticia-secundaria {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-self: center;
-	border: 2px solid fuchsia;
+	align-items: center;
 	height: 450px;
 	width: 600px;
 	margin: 0.5em;
+	background-image: url('../img/bienal-do-livro-2022.jpg');
+	transition: all 0.2s ease-out;
+	border-radius: 12px;
+	cursor: pointer;
+	background-size: cover;
+}
+
+
+/* ===============
+   Texto que está 
+   dentro da Notícia
+   primária e secundária
+   =============== */
+
+.texto-noticia { 
+	font-size: xx-large;
+	color: #FFFFFF;
+	width: 100%;
+	margin-top: 8em;
+	margin-left: 20px;
+	text-shadow: 0.8px 0.5px #000000;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* ===============
+   Animação da imagem
+   da notícia primária
+   =============== */
+
+.noticia-primaria:hover {
+	transform: scale(1.03);
+	background-size: cover;
+}
+
+/* ===============
+   Animação da imagem
+   da notícia secundária
+   =============== */
+
+.noticia-secundaria:hover {
+	transform: scale(1.03);
+	background-size: cover;
 }
