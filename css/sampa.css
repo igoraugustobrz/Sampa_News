@@ -109,7 +109,7 @@ li a {
 
 /*Formata a tag a quando o usuário passa o mouse sobre o link*/
 li a:hover {
-	background: #8D8DAA;
+	background: #FFFFFF;
 	border-radius: 4px;
 }
 
@@ -134,8 +134,34 @@ input[type="checkbox"]:checked ~ nav {
 /*AQUI TERMINA A FORMATAÇÃO DO FUNCIONAMENTO DO MENU*/
 
 /* ===============
+   Texto que está
+   dentro do menu
+   =============== */
+
+.text-menu {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: small;
+	text-indent: 10pt;
+	text-align: justify;
+	vertical-align: bottom;
+	text-transform: uppercase;
+}
+
+/* ===============
+   Cor que aparecerá
+   quando o usuário
+   passar o mouse
+   =============== */
+
+.text-menu:hover {
+	color: black;
+	font-weight: bolder;
+}
+
+/* ===============
    Flex-Container com a formatação geral
    =============== */
+
 .flex-container {
 	display: flex;
 	flex-direction: row;
